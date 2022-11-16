@@ -93,7 +93,7 @@ In terminal:
  - Sequelize as the ORM
 
 ## Deployed Application
-https://git.heroku.com/sean-wallace-tech-blog.git
+https://sean-wallace-tech-blog.herokuapp.com/
 
 ## Author
  - Sean Wallace: https://github.com/SeanU2022
