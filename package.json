@@ -1,0 +1,50 @@
+{
+  "name": "sean-wallace-tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "npx eslint **/*.js --fix",
+    "start": "node server.js",
+    "watch": "nodemon server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.0",
+    "connect-session-sequelize": "^7.0.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.17.1",
+    "express-handlebars": "^5.2.0",
+    "express-session": "^1.17.1",
+    "mysql2": "^2.2.1",
+    "sequelize": "^6.3.5"
+  },
+  "production": {
+    "use_env_variable": "JAWSDB_URL",
+    "dialect": "mysql"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4",
+    "eslint": "^7.12.1",
+    "eslint-config-prettier": "^6.15.0",
+    "prettier": "^2.1.2",
+    "eslint-plugin-prettier": "^3.1.2"
+  },
+  "_comments": {
+    "dependencies-not-needed": "?",
+    "handlebars": "^4.7.7",
+    "devDependencies-not-needed": "?",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.7.0",
+    "prettier": "^1.19.1",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.8.0",
+    "scripts-test-we-might-need": "?",
+    "test": "jest --watch a ref: mod17"
+  }
+}
