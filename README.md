@@ -84,6 +84,7 @@ In terminal:
 ### Back-end Dependencies
  - BCrypt
  - dotenv
+ - path
  - Express
  - Express-handlebars using Handlebars.js as the templating language
  - Express-session npm package for authentication

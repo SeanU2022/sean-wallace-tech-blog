@@ -51,13 +51,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
 
-// SDW10NOV
-app.get('/test1', async (req, res) => {
-  // res.send('you hit server.js')
-  // res.render('homepage')
-  res.render('login')
-})
-
 
 // Fallback route 
 app.get('*', (req, res) =>
