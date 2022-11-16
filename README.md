@@ -92,5 +92,8 @@ In terminal:
  - eslint
  - Sequelize as the ORM
 
+## Deployed Application
+https://git.heroku.com/sean-wallace-tech-blog.git
+
 ## Author
  - Sean Wallace: https://github.com/SeanU2022
