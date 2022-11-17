@@ -14,3 +14,5 @@ app.get('/test1', async (req, res) => {
 <div id="test">
   <p> hello </p>
 </div>
+
+SCRIPT: pushgh() = push to Git and Heroku

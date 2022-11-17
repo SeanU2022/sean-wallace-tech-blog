@@ -13,6 +13,8 @@ const seedDatabase = async () => {
     returning: true,
   });
 
+  // a random user id from the list of users gets assigned to a post
+
   for (const project of projectData) {
     await Project.create({
       ...project,
