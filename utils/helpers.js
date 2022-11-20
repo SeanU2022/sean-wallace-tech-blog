@@ -1,6 +1,9 @@
 module.exports = {
   format_date: (date) => {
     // Format date as MM/DD/YYYY
+
+    // console.log(new Intl.DateTimeFormat('en-GB', { dateStyle: 'full', timeStyle: 'long', timeZone: 'Australia/Sydney' }).format(date));
+    // return date.toLocaleDateString('en-GB');
     return date.toLocaleDateString();
   },
   format_amount: (amount) => {

@@ -5,18 +5,16 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tech Blog</title>
+  <title>Seanos' Tech Blog</title>
   <link rel="stylesheet" href="/css/jass.css">
   <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/x-icon" href="../../public/images/SWiconFinal.ico">
 </head>
 
 <body>
   <div class="flex-column justify-space-around">
     <header class="display-flex justify-space-between align-center p-2">
-      <h1>
-        <span role="img" aria-label="money">💸</span>
-        <a href="/">Fund My Project!</a>
-      </h1>
+
       <nav>
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
@@ -25,6 +23,11 @@
         {{else}}
         <a href="/login">login</a>
         {{/if}}
+
+        <h1>
+          <span role="img" aria-label="money">💸</span>
+          <a href="/">Seans' Tech Blog I am main.handlebars</a>
+      </h1>
       </nav>
     </header>
     <main class="container container-fluid mt-5">

@@ -1,9 +1,10 @@
 const sequelize = require('../config/connection');
-const { User, Project, Post } = require('../models');
+const { User, Project, Post, Comment } = require('../models');
 
 const userData = require('./userData.json');
 const projectData = require('./projectData.json');
 const postData = require('./postData.json');
+const commentData = require('./commentData.json');
 
 const seedDatabase = async () => {
   await sequelize.sync({ force: true });
@@ -26,6 +27,17 @@ const seedDatabase = async () => {
     await Post.create({
       ...post,
       user_id: users[Math.floor(Math.random() * users.length)].id,
+    });
+  }
+
+
+  const posts = await Post.findAll();
+
+  for (const comment of commentData) {
+    await Comment.create({
+      ...comment,     // spread operator gettin key neames of object
+      user_id: users[Math.floor(Math.random() * users.length)].id,
+      post_id: posts[Math.floor(Math.random() * posts.length)].id
     });
   }
 

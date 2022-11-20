@@ -1,0 +1,20 @@
+[
+  {
+    "content": "comment git - the stupid content tracker"
+  },
+  {
+    "content": "comment Node Package Manager"
+  },
+  {
+    "content": "comment  The first step to web development"
+  },
+  {
+    "content": "comment Media Query, Flexbox, Box Styling, Reset, Typography, Pseudo Classes, Pseudo Elemtents, Form Styles, WireFraming, Selectors, Variables"
+  },
+  {
+    "content": "comment 1/2 Console Log, 3/4 Variables, 5/6 Primitive Datatypes, 7/8 Comparison Operators, 9/10 Conditional Statements, 11/12 Arrays, 13/14 Iteration, 15/16 Functions, 17/18 Lexical Scope, 19/20 build-in Oject Methods, 21/22 custom Object Methods `${(templateLiteral)}`,  23/24 Objects inside Objects, 25/26 client JS 'this' scope"
+  },
+  {
+    "content": "comment 1/2 Window Object, 3/4 Traverse DOM, 5/6 Setting Attributes (style=CSS, src=JS, img/div), 7/8 document.createElement//appendChild/setAttribute, 9/10 setInterval, 11/12 querySelector(id)/addEventListener, 13/14 event.preventDefaul, 15/16 addEventListener(keyup/down), 17/18 Event Bubbling/Carousel, 19/20 data attributes(data-state/hidden/visible), 21/22 localStorage.set/getItem,  23/24 localStorage.setItem('user', JSON.stringify(signUp));, 25/26 JSON.parse(localStorage.getItem('user')) + push + splice"
+  }
+]
