@@ -5,6 +5,7 @@ const newFormHandler = async (event) => {
   const content = document.querySelector('#post-content').value.trim();
 
   if (title && content) {
+    // controllers/api/postRoutes/router.post(/)
     const response = await fetch(`/api/posts`, {
       method: 'POST',
       body: JSON.stringify({ title, content }),
@@ -32,15 +33,17 @@ const delButtonHandler = async (event) => {
     if (response.ok) {
       document.location.replace('/profile');
     } else {
-      alert('Failed to delete project');
+      alert('Failed to delete post');
     }
   }
 };
 
+// Create button profile.handlebars
 document
   .querySelector('.new-post-form')
   .addEventListener('submit', newFormHandler);
 
+// Delete buttons on list of profile.handlebars
 document
   .querySelector('.post-list')
   .addEventListener('click', delButtonHandler);

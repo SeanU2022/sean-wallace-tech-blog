@@ -7,7 +7,7 @@ node_modules
 .env
 commitmsg.txt
 db/check.sql
-handycode.js
+handycode*.js
 
 # User-specific files
 *.rsuser

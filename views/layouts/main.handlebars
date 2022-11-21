@@ -16,17 +16,19 @@
     <header class="display-flex justify-space-between align-center p-2">
 
       <nav>
+        <a href="/">Home</a>
+
         <!-- Conditionally render login or logout links -->
         {{#if logged_in}}
-        <a href="/profile">profile</a> |
-        <button class="no-button" id="logout">logout</button>
+          <a href="/profile">Profile</a>
+          <button class="no-button" id="logout">Logout</button>
         {{else}}
-        <a href="/login">login</a>
+          <a href="/login">Login</a>
         {{/if}}
-
+        
         <h1>
-          <span role="img" aria-label="money">💸</span>
-          <a href="/">Seans' Tech Blog I am main.handlebars</a>
+          <span role="img" aria-label="computer">💻</span>
+          <a href="/">Tech Blog</a>
       </h1>
       </nav>
     </header>
@@ -34,9 +36,7 @@
       <!-- Render the sub layout -->
       {{{ body }}}
     </main>
-    <footer>
-      
-    </footer>
+
   </div>
 
   <!-- Render script for logged in users only -->
@@ -45,4 +45,7 @@
   {{/if}}
 </body>
 
+    <footer>
+      
+    </footer>
 </html>

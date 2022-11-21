@@ -11,6 +11,7 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 // CONTROLLERS
 const routes = require('./controllers');
 const helpers = require('./utils/helpers');
+const { read } = require('fs');
 
 const app = express();
 // const PORT = process.env.PORT || 3001;
@@ -52,10 +53,12 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(routes);
 
 // Fallback route 
-app.get('*', (req, res) =>
-  res.send(
-    `INVALID ROUTE @: http://localhost:${PORT}`
-  )
+app.get('*', (req, res) => {
+  // res.send(
+  //   `INVALID ROUTE: http://localhost:${PORT}`
+  // )
+  res.redirect('/')
+}
 );
 
 

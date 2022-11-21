@@ -56,9 +56,9 @@ THEN I am able to view comments but I am prompted to log in again before I can a
 
 ## Mock-Up
 
-The following animation demonstrates the application functionality:
+The following mock-up shows the application:
 
-![Animation cycles through signing into the app, clicking on buttons, and updating blog posts.](./Assets/14-mvc-homework-demo-01.gif) 
+![Mockup.](mockup.png) 
 
 ## Local Installation
 1. install node modules: npm i
@@ -71,7 +71,7 @@ The following animation demonstrates the application functionality:
 
 ## Running the application
 In terminal:
- 1. node start or node watch
+ 1. node server.js or npm start or npm run watch
  2. click http://localhost:{PORT}
 
 ## Technologies Used
@@ -79,18 +79,22 @@ In terminal:
 ### Front-end
  - HTML
  - JavaScript/JQuery
- - CSS (Bootstrap)
+ - CSS (jass)
 
 ### Back-end Dependencies
- - BCrypt
- - dotenv
  - path
  - Express
  - Express-handlebars using Handlebars.js as the templating language
- - Express-session npm package for authentication
- - mySQL2
- - eslint
+ - Express-session for cookies
+ - Connect-session-sequelize for authentication
+ - dotenv for mySQL2
  - Sequelize as the ORM
+ - mySQL2/JawsDB
+ - BCrypt
+ - dev: eslint, package.json, prettier, nodemon
+
+## Repository
+https://github.com/SeanU2022/sean-wallace-tech-blog
 
 ## Deployed Application
 https://sean-wallace-tech-blog.herokuapp.com/

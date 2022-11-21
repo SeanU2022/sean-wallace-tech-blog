@@ -2,22 +2,6 @@ const router = require('express').Router();
 const { User } = require('../../models');
 
 router.post('/', async (req, res) => {
-
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-  console.log('controllers/api/userRoutes POST /')
-
   try {
     const userData = await User.create(req.body);
 
@@ -33,21 +17,6 @@ router.post('/', async (req, res) => {
 });
 
 router.post('/login', async (req, res) => {
-
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
-  console.log('controllers/api/userRoutes POST /login')
 
   try {
     const userData = await User.findOne({ where: { email: req.body.email } });
